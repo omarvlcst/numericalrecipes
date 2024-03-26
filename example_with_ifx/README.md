@@ -10,7 +10,7 @@ For further information about how to download and setup the Intel Fortran Compil
 ~/example_with_ifx$
 ```
 
-2.- Now, type down in that position the following command:
+2.- Now, type down next to that position the following command:
 
 ```
 ~/example_with_ifx$   chmod +x helloworld.f90
