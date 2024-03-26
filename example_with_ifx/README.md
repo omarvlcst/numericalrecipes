@@ -4,9 +4,13 @@ For further information about how to download and setup the Intel Fortran Compil
 
 <h2>How to compile and run the source code</h2>
 
-1.- Open a Terminal in the location of the directory with these files.
+1.- Open a Terminal in the location of the directory with these files, until it shows the cursor blinking next to the path of the directoy, like this:
 
-2.- Type down in the terminal:
+```
+~/example_with_ifx$ |
+```
+
+2.- Now, type down in that position the following command:
 
 ```
 ~/example_with_ifx$   chmod +x helloworld.f90
