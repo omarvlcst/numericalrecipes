@@ -2,13 +2,13 @@ I include here a folder where one can compile a short source code in Fortran wit
 
 For further information about how to download and setup the Intel Fortran Compiler API and Toolkit, visit my entry at: ********************
 
-<h3>How to compile and run the source code</h3>
+<h2>How to compile and run the source code</h2>
 
 1.- Open a Terminal in the location of the directory with these files.
 2.- Type down in the terminal:
 
 ```
-~/example_with_ifx$ chmod +x **helloworld.f90**
+~/example_with_ifx$ chmod +x helloworld.f90
 ```
 
 for converting the source code file *helloworld.f90* into an executable.
@@ -16,7 +16,7 @@ for converting the source code file *helloworld.f90* into an executable.
 3.- Next, type down:
 
 ``` 
-~/example_with_ifx$ **make**
+~/example_with_ifx$ make
 ```
 
 This will compile the Fortran source code following the instructions in the Makefile, which are, using the ifx compiler specified in the FC variable, with optimization level -O2 specified in the FFLAGS variable.
@@ -25,7 +25,7 @@ This will compile the Fortran source code following the instructions in the Make
 5.- Next, for running this generated file, type down:
 
 ```
-~/example_with_ifx$ **./helloworld**
+~/example_with_ifx$ ./helloworld
 ```
 
 for which the terminal should show the output:
@@ -37,7 +37,7 @@ for which the terminal should show the output:
 6. The compiled files can be cleaned up using the clean target:
 
 ```
-~/example_with_ifx$ **make clean**
+~/example_with_ifx$ make clean
 ```
 
 This will remove the object files (*.o) and the executable.
