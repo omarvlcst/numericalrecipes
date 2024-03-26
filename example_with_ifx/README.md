@@ -7,7 +7,7 @@ For further information about how to download and setup the Intel Fortran Compil
 1.- Open a Terminal in the location of the directory with these files, until it shows the cursor blinking next to the path of the directoy, like this:
 
 ```
-~/example_with_ifx$ |
+~/example_with_ifx$  |
 ```
 
 2.- Now, type down in that position the following command:
