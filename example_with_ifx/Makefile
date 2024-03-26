@@ -2,22 +2,26 @@
 FC = ifx
 FFLAGS = -O2
 
-# Define source files and executable name
+# Define source files and executable
 SRCS = helloworld.f90
-OBJS = $(SRCS:.f90=.o)
+OBJS = helloworld.o
 EXEC = helloworld
 
 # Default target
 all: $(EXEC)
 
+# Run instruction for running the program
+run: $(EXEC)
+	./helloworld
+
+helloworld: $(OBJS)
+	ifx $^ -o $@
+
 # Rule to compile Fortran source files
 %.o: %.f90
-    $(FC) $(FFLAGS) -c $< -o $@
+	$(FC) $(FFLAGS) $^ -c
 
-# Rule to link object files into executable
-$(EXEC): $(OBJS)
-    $(FC) $(FFLAGS) $^ -o $@
 
 # Clean rule to remove object files and executable
 clean:
-    rm -f $(OBJS) $(EXEC)
+	/bin/rm -f $(OBJS) $(EXEC)
