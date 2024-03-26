@@ -4,9 +4,40 @@ For further information about how to download and setup the Intel Fortran Compil
 
 <h3>How to compile and run the source code</h3>
 
-1.- Open a Terminal in the location where the folder is found.
+1.- Open a Terminal in the location of the directory with these files.
 2.- Type down in the terminal:
 
-'''
-a
-'''
+```
+~/example_with_ifx$ chmod +x **helloworld.f90**
+```
+
+for converting the source code file *helloworld.f90* into an executable.
+
+3.- Next, type down:
+
+``` 
+~/example_with_ifx$ **make**
+```
+
+This will compile the Fortran source code following the instructions in the Makefile, which are, using the ifx compiler specified in the FC variable, with optimization level -O2 specified in the FFLAGS variable.
+
+4.- If the compilation is successful, one can find the executable named *helloworld* in the same directory.
+5.- Next, for running this generated file, type down:
+
+```
+~/example_with_ifx$ **./helloworld**
+```
+
+for which the terminal should show the output:
+
+```
+> Hello, world!
+```
+
+6. The compiled files can be cleaned up using the clean target:
+
+```
+~/example_with_ifx$ **make clean**
+```
+
+This will remove the object files (*.o) and the executable.
