@@ -30,13 +30,14 @@ This will compile the Fortran source code following the instructions in the Make
 5.- Next, for running this generated file, type down:
 
 ```
-~/example_with_ifx$   ./helloworld
+~/example_with_ifx$   make run
 ```
 
 for which the terminal should show the output:
 
 ```
-> Hello, world!
+> ./helloworld
+>  Hello, world!
 ```
 
 6. The compiled files can be cleaned up using the clean target:
