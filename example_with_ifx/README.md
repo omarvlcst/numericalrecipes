@@ -5,6 +5,7 @@ For further information about how to download and setup the Intel Fortran Compil
 <h2>How to compile and run the source code</h2>
 
 1.- Open a Terminal in the location of the directory with these files.
+
 2.- Type down in the terminal:
 
 ```
