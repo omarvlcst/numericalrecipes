@@ -4,7 +4,7 @@ For further information about how to download and setup the Intel Fortran Compil
 
 <h2>How to compile and run the source code</h2>
 
-1.- Open a Terminal in the location of the directory with these files, until it shows the cursor blinking next to the path of the directoy, appearing in the window like this:
+1.- Open a Terminal inside the directory containing this directory, until it shows the cursor blinking next to the path of the directory, appearing in the terminal window like this:
 
 ```
 ~/example_with_ifx$
