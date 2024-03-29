@@ -1,6 +1,6 @@
 # Define compiler and compiler flags
 FC = ifx
-FFLAGS = -O2
+FFLAGS = -O3
 
 # Define source files and executable
 SRCS = helloworld.f90
@@ -14,7 +14,7 @@ all: $(EXEC)
 run: $(EXEC)
 	./helloworld
 
-helloworld: $(OBJS)
+$(EXEC): $(OBJS)
 	ifx $^ -o $@
 
 # Rule to compile Fortran source files
