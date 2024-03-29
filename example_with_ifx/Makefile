@@ -15,7 +15,7 @@ run: $(EXEC)
 	./helloworld
 
 $(EXEC): $(OBJS)
-	ifx $^ -o $@
+	$(FC) $^ -o $@
 
 # Rule to compile Fortran source files
 %.o: %.f90
